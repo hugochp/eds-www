@@ -1,0 +1,184 @@
+/* Styles pour réinitialisation des marges pour le corps */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour l'en-tête */
+header {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Styles pour l'image dans l'en-tête */
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styles pour le contenu à l'intérieur de l'en-tête */
+header .contenu {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#menu1 ul,
+#menu1 li {
+    padding: 0;
+    margin: 0;
+}
+
+#menu1 ul.nav {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styles pour le menu */
+#menu1 .nav li {
+    width: 20%;
+    text-align: center;
+}
+
+#menu1 .nav li > a {
+    color: #634E42;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    transition: color 0.3s ease;
+    font-family: 'Canter Bold', sans-serif; /* Ajout de la fonte Canter Bold */
+    font-size: 28px; /* Taille de la police */
+    border: 1px solid #634E42; /* Ajout de la bordure */
+    border-radius: 5px; /* Ajout de coins arrondis */
+}
+
+
+#menu1 .nav li > a:hover {
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    font-family: 'Canter Light', sans-serif;
+    font-size: 20px;
+}
+
+footer table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer table td {
+    width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer p {
+    margin-top: 0;
+}
+
+footer img {
+    width: 30px; /* Ajuster la taille selon vos besoins */
+    height: 30px; /* Ajuster la taille selon vos besoins */
+}
+
+footer div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #17fbff; /* Couleur des liens */
+    text-decoration: none; /* Supprimer la soulignement par défaut */
+}
+
+footer a:hover {
+    color: #1761ff; /* Couleur des liens au survol */
+}
+
+main {
+    width: 100%;
+    overflow-x: auto; /* Activer le défilement horizontal */
+    white-space: nowrap; /* Empêcher le retour à la ligne des éléments enfants */
+}
+
+.image-container {
+    width: 1000px; /* Largeur totale de toutes les images */
+    height: 300px; /* Hauteur de la zone de visualisation des images */
+}
+
+.image-container img {
+    width: 300px; /* Largeur de chaque image */
+    height: 100%; /* Hauteur de chaque image (adaptative à la hauteur du conteneur) */
+    display: inline-block; /* Afficher les images en ligne */
+    margin-right: 10px; /* Marge entre chaque image */
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
